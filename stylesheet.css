@@ -1114,6 +1114,21 @@ audio {
 #b7,#b77{
 	background-image: url('b7.png');
 }
+
+/* Responsif: untuk layar di bawah 768px */
+@media (max-width: 768px) {
+	.balloons {
+		width: 60px;
+		height: 110px;
+		background-size: 60px 110px;
+	}
+	.balloons h2 {
+		font-size: 24px;
+		text-shadow: 3px 3px 3px #FFF;
+	}
+}
+
+
 .balloons-rotate-behaviour-one {
 	-webkit-animation: balloons_rotate_one linear 10s infinite;
 	-webkit-transform: rotate(30deg);
