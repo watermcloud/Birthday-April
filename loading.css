@@ -51,6 +51,31 @@
   box-shadow: #FFF 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, #FFF -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
 }
 
+/* Spinner animation */
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .loading {
+    width: 3em;
+    height: 3em;
+  }
+
+  .loading:not(:required):after {
+    font-size: 12px;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: -0.75em;
+  }
+}
+
 /* Animation */
 
 @-webkit-keyframes spinner {
